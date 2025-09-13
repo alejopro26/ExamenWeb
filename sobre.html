@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nosotros</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR igual que en index -->
+
+  <div class="container my-5">
+    <h1 class="text-center">Sobre Nosotros</h1>
+
+    <!-- Acordeón Bootstrap -->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#empresa">Nuestra Empresa</button></h2>
+        <div id="empresa" class="accordion-collapse collapse show"><div class="accordion-body">Información de la empresa.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mision">Misión</button></h2>
+        <div id="mision" class="accordion-collapse collapse"><div class="accordion-body">Nuestra misión es...</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vision">Visión</button></h2>
+        <div id="vision" class="accordion-collapse collapse"><div class="accordion-body">Nuestra visión es...</div></div>
+      </div>
+    </div>
+
+    <!-- Empleados -->
+    <div class="row text-center mt-5">
+      <div class="col-md-4">
+        <img src="https://picsum.photos/150" class="rounded-circle mb-2" alt="empleado1">
+        <h5>Empleado 1</h5>
+        <a href="#" class="btn btn-primary btn-sm">Facebook</a>
+        <a href="#" class="btn btn-info btn-sm">Twitter</a>
+        <a href="#" class="btn btn-dark btn-sm">LinkedIn</a>
+      </div>
+      <!-- Agregar más empleados -->
+    </div>
+  </div>
+  <footer>
+  <div class="container">
+    <p>&copy; 2025 Mi Sitio Web | Todos los derechos reservados</p>
+    <p>
+      <a href="index.html">Inicio</a> |
+      <a href="productos.html">Productos</a> |
+      <a href="sobre.html">Sobre nosotros</a> |
+      <a href="login.html">Log In</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- NAVBAR igual que en index -->
+
+  <div class="container my-5">
+    <h1 class="text-center">Formulario de Registro</h1>
+    <form id="formRegistro" class="w-50 mx-auto">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" pattern="[A-Za-z ]+" required>
+      </div>
+      <div class="mb-3">
+        <label for="correo" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correo" required>
+      </div>
+      <div class="mb-3">
+        <label for="pass" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="pass" minlength="5" maxlength="20" required>
+      </div>
+      <button type="submit" class="btn btn-success">Registrar</button>
+      <a href="login.html" class="btn btn-danger">Cancelar</a>
+    </form>
+  </div>
+  <script>
+    document.getElementById("formRegistro").addEventListener("submit", (e) => {
+      e.preventDefault();
+      let nombre = document.getElementById("nombre").value;
+      let correo = document.getElementById("correo").value;
+      let pass = document.getElementById("pass").value;
+      alert(`Registrado:\nNombre: ${nombre}\nCorreo: ${correo}\nContraseña: ${pass}`);
+    });
+  </script>
+  <footer>
+  <div class="container">
+    <p>&copy; 2025 Mi Sitio Web | Todos los derechos reservados</p>
+    <p>
+      <a href="index.html">Inicio</a> |
+      <a href="productos.html">Productos</a> |
+      <a href="sobre.html">Sobre nosotros</a> |
+      <a href="login.html">Log In</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
